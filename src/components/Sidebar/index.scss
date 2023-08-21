@@ -52,7 +52,7 @@
                     opacity: 0;
                 }
 
-                &.after {
+                &:after {
                     opacity: 1;
                 }
             }
@@ -69,10 +69,10 @@
                 opacity: 0;
                 -webkit-transition: all 0.3s ease-out;
                 transition: all 0.3s ease-out;
-            }
+              }
 
             &:first-child {
-                &::after {
+                &:after {
                     content: 'HOME'
                 }
             }
@@ -93,6 +93,31 @@
             svg {
                 color: #ffd700
             }
+        }
+    }
+
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            a {
+                padding: 7px 0;
+                display: block;
+                font-size: 15px;
+                line-height: 16px;
+                color: #4d4d4e;
+            }
+
+                &:hover svg {
+                    color: #ffd700;
+                }
         }
     }
 }
