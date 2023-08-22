@@ -4,16 +4,16 @@ import './index.scss';
 
 const Layout = () => {
     return (
-    <div classname="App">
+    <div className="App">
         <Sidebar />
-        <div classname="page">
-            <span classname="tags top-tags">&lt;body&gt;</span>
+        <div className="page">
+            <span className="tags top-tags">&lt;body&gt;</span>
 
             <Outlet />
-            <span classname="tags bottom-tags">
+            <span className="tags bottom-tags">
              &lt;/body&gt;
              <br />
-             <span classname="bottom-tag-html">&lt;/html&gt;</span>
+             <span className="bottom-tag-html">&lt;/html&gt;</span>
             </span>
         </div>
     </div>
