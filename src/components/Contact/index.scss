@@ -14,6 +14,7 @@
             overflow: hidden;
             display: block;
             position: relative;
+            clear: both;
             opacity: 0;
             animation: fadeInUp 2s 2s;
             animation-fill-mode: forwards;
@@ -41,7 +42,7 @@
         color: #fff;
         padding: 0 20px;
         box-sizing: border-box;
-    }
+  }
 
     textarea {
         width: 100%;

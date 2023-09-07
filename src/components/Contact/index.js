@@ -7,7 +7,7 @@ import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const refForm = useRef()
+    const form = useRef()
 
     useEffect(() => {
         return setTimeout(() => {
@@ -20,9 +20,9 @@ const Contact = () => {
 
         emailjs
             .sendForm(
-                'service_64t920a',
-                'template_YeJhZkgb',
-                refForm.current,
+                'service_4tbtl1t',
+                'template_k9ddigs',
+                form.current,
                 'pyLVuHVu-x7MB_i71'
             )
             .then(
@@ -52,7 +52,7 @@ const Contact = () => {
                 BLAH BLAH BLAH
             </p>
             <div className='contact-form'>
-                <form ref={refForm} onSubmit={sendEmail}>
+                <form ref={form} onSubmit={sendEmail}>
                     <ul>
                         <li className="half">
                             <input type="text" name="name" placeholder="Name" required />
@@ -66,7 +66,7 @@ const Contact = () => {
                         />
                         </li>
                         <li>
-                            <input 
+                            <input
                             placeholder="Subject"
                             type="text"
                             name="subject"
@@ -86,6 +86,10 @@ const Contact = () => {
                     </ul>
                 </form>
             </div>
+            </div>
+            <div className='info-map'>
+                
+
             </div>
         </div>
         <Loader type="pacman"/>
