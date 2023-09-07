@@ -38,7 +38,8 @@
     animation-delay: 1s;
 }
 
-.about-page {
+.about-page,
+.contact-page {
     .text-zone {
         position: absolute;
         left: 10%;
@@ -60,9 +61,10 @@
         margin-bottom: 40px;
         left: 10px;
 
-        &::before{
+        &:before{
             content: '<h1>';
             font-family: 'La Belle Aurore';
+            color: #ffd700;
             font-size: 18px;
             position: absolute;
             margin-top: -10px;
@@ -71,9 +73,10 @@
             line-height: 18px;
         }
 
-        &::after {
-            content: '<h1 />';
+        &:after {
+            content: '<h1/>';
             font-family: 'La Belle Aurore';
+            color: #ffd700;
             font-size: 18px;
             line-height: 18px;
             position: absolute;
@@ -91,7 +94,6 @@
         font-weight: 300;
         min-width: fit-content;
         animation: pulse 1s;
-
         &:nth-of-type(1) {
             animation-delay: 1.1s;
         }

@@ -8,7 +8,7 @@ const Sidebar = () => (
  <div className='nav-bar'> 
     <Link className='logo' to='/'>
         <img src={'nada'} alt='logo' />
-        <img clasName='sub-logo' src={'morte'} alt='joey' />
+        <img className='sub-logo' src={'morte'} alt='joey' />
     </Link>
     <nav>
         <NavLink exact='true' activeclassname='active' to='/'>
