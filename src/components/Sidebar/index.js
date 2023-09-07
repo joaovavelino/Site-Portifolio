@@ -1,14 +1,14 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faVcard, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => (
  <div className='nav-bar'> 
     <Link className='logo' to='/'>
-        <img src={'nada'} alt='logo' />
-        <img className='sub-logo' src={'morte'} alt='joey' />
+        {/* <img src={'nada'} alt='logo' />
+        <img className='sub-logo' src={'morte'} alt='joey' /> */}
     </Link>
     <nav>
         <NavLink exact='true' activeclassname='active' to='/'>
@@ -46,7 +46,7 @@ const Sidebar = () => (
                 rel="noreferrer" 
                 href="https://acrobat.adobe.com/id/urn:aaid:sc:US:f5f4efef-838a-41a7-8ebc-3c62f1302692"
             >
-                <FontAwesomeIcon icon={faEnvelope} color="$4d4d4e" />
+                <FontAwesomeIcon icon={faVcard} color="$4d4d4e" />
             </a>
         </li>
     </ul>
