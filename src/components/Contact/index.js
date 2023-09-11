@@ -49,7 +49,8 @@ const Contact = () => {
             />
             </h1>
             <p>
-                BLAH BLAH BLAH
+                I'm looking for a job on front-end now, in a english, or portuguese speaking enviroment, if i got your interest.
+                Please, leave me a message here.
             </p>
             <div className='contact-form'>
                 <form ref={form} onSubmit={sendEmail}>

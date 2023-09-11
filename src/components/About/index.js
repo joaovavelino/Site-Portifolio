@@ -25,9 +25,9 @@ const About = () => {
                       idx={15}
                     />
                 </h1>
-                <p>blah blah blah</p>
-                <p>blah blah blah</p>
-                <p>blah blah blah</p>
+                <p>Hi, I'm João Victor Avelino, a full-stack developer with a passion for front-end, a place where I can express more of my creativity.</p>
+                <p>I really enjoy working on teams, since I believe it's the best way for me to learn. </p>
+                <p>For a year and a half, I studied Cultural Production, which allowed me to develop my creativity and communication skills through contact with different cultures and people.</p>
             </div>
 
             <div className='stage-cube-cont'>

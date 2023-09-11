@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import './index.scss'
+import Photo from '../../assets/images/My-Photo.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faVcard, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -7,8 +8,8 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 const Sidebar = () => (
  <div className='nav-bar'> 
     <Link className='logo' to='/'>
-        {/* <img src={'nada'} alt='logo' />
-        <img className='sub-logo' src={'morte'} alt='joey' /> */}
+        <img src={Photo} alt='logo' />
+        {/* <img className='sub-logo' src={'morte'} alt='joey' /> */}
     </Link>
     <nav>
         <NavLink exact='true' activeclassname='active' to='/'>
